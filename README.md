@@ -106,7 +106,7 @@ arguments in Bash.
 
 **Example:**
 
-
+```bash
 ./disk_usage_checker.sh
 
 ====================================
@@ -121,7 +121,6 @@ STATUS      : Healthy
 ACTION      : No action required
 ====================================
 
----
 
 ## 🧠 Concepts Learned
 
