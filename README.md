@@ -119,7 +119,9 @@ AVAILABLE   : 954G
 USAGE       : 1%
 STATUS      : Healthy
 ACTION      : No action required
+
 ====================================
+```
 ---
 
 ## 🧠 Concepts Learned
