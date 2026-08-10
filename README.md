@@ -85,6 +85,42 @@ arguments in Bash.
 
     ./argument_test.sh abhishek kundan kumar
 
+
+---
+### 05. Disk Usage Monitor
+
+- Monitors disk usage of the Linux root filesystem.
+- Displays total, used, and available disk space.
+- Calculates disk usage percentage.
+- Checks disk health based on usage percentage.
+- Displays recommended action.
+
+**Commands/Concepts Used:**
+- `df`
+- `awk`
+- `tr`
+- `printf`
+- Variables
+- Command substitution `$()`
+- `if / elif / else`
+
+**Example:**
+
+
+./disk_usage_checker.sh
+
+====================================
+        DISK USAGE MONITOR
+====================================
+FILESYSTEM  : /dev/sdd
+TOTAL       : 1007G
+USED        : 2.6G
+AVAILABLE   : 954G
+USAGE       : 1%
+STATUS      : Healthy
+ACTION      : No action required
+====================================
+
 ---
 
 ## 🧠 Concepts Learned
@@ -109,7 +145,6 @@ arguments in Bash.
 
 ## 🚀 Upcoming Scripts
 
-- [ ] Disk Usage Monitor
 - [ ] CPU Usage Monitor
 - [ ] File and Directory Checker
 - [ ] Backup Automation Script
@@ -158,7 +193,7 @@ New scripts and improvements will be added as I continue learning.
 | Command-Line Arguments | ✅ |
 | Process Monitoring | ✅ |
 | Memory Monitoring | ✅ |
-| Disk Monitoring | 🔄 |
+| Disk Monitoring | ✅ |
 | Loops | 🔄 |
 | Functions | 🔄 |
 | Automation | 🔄 |
