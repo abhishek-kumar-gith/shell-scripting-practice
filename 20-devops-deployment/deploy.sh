@@ -1,7 +1,7 @@
 #!/bin/bash
 # DevOps Deployment Script
 # Backup feature update
-
+# Soft reset practice
 
 APP_NAME="myapp"
 #APP_DIR="/opt/$APP_NAME"
