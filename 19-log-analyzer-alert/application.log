@@ -1,0 +1,13 @@
+
+
+
+INFO: Application started
+INFO: User logged in
+WARNING: High memory usage
+ERROR: Database connection failed
+INFO: Request processed
+ERROR: API request failed
+WARNING: Disk usage is high
+INFO: User logged out
+INFO: Database connection failed
+INFO: Application running

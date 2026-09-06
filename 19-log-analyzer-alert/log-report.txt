@@ -1,0 +1,16 @@
+=================================
+        LOG ANALYSIS REPORT
+=================================
+Analysis Time: 2026-09-01 10:03:10
+Log File: application.log
+ERROR Count: 2
+WARNING Count: 2
+Status: NORMAL
+
+ERROR Details:
+ERROR: Database connection failed
+ERROR: API request failed
+
+WARNING Details:
+WARNING: High memory usage
+WARNING: Disk usage is high
