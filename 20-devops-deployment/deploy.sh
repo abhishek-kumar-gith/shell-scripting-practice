@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# DevOps Deployment Script
 
 APP_NAME="myapp"
 #APP_DIR="/opt/$APP_NAME"
