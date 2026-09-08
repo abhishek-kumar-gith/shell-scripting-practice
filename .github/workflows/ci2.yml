@@ -10,3 +10,4 @@ jobs:
       - run: echo "Hello from My First CI"
       - run: pwd
       - run: ls  
+      - run: bash 02-memory-health-checker/memory_checker.sh
