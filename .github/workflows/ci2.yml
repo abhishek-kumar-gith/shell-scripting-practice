@@ -11,14 +11,20 @@ jobs:
       - run: pwd
       - run: ls
       
-      - name: Optional test
-        continue-on-error: true
-        run: exit 1
+      - name: Success check
+        if: success()
+        run: echo "SUCCESS condition is true"
 
-
-      - name: Check failure
+      - name: Failure check
         if: failure()
-        run: echo "Previous step failed"
+        run: echo "FAILURE condition is true" 
+        
+        
+
+
+      
+        
+        
       
       
         
