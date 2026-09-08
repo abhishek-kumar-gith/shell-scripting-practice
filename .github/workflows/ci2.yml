@@ -12,7 +12,9 @@ jobs:
       - run: ls
       - run: exit 1
       
-      - name: Check success
-        if: success()
-        run: echo "Previous steps were successful"
+      - name: Check failure
+        if: failure()
+        run: echo "Previous step failed"
+        
+        
       - run: bash 02-memory-health-checker/memory_checker.sh  
