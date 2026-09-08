@@ -8,3 +8,4 @@ jobs:
     steps:
       - run: echo "Hello from My First CI"
       - run: pwd
+      - run: ls  
