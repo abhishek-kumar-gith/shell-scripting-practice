@@ -10,7 +10,7 @@ jobs:
       - run: echo "Hello from My First CI"
       - run: pwd
       - run: ls
-      - run: exit 1
+      
       - name: Optional test
         continue-on-error: true
         run: exit 1
