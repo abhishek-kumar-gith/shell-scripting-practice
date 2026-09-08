@@ -11,4 +11,4 @@ jobs:
       - run: pwd
       - run: ls  
       - run: bash 02-memory-health-checker/memory_checker.sh
-      - run: ls /does-not-exist
+      - run: exit 1 
