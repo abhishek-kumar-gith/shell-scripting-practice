@@ -1,19 +1,9 @@
-
-
 name: My First CI
 
-
-on:
-  push:
-    branches:
-      - main
+on: push
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: code checkout
-        uses: actions/checkout@v4
-      - name: Show files
-         run: echo "Hello from GitHub Actions"
+      - run: echo "Hello from My First CI"
