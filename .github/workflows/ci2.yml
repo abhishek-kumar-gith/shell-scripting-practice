@@ -9,8 +9,10 @@ jobs:
       - uses: actions/checkout@v4
       - run: echo "Hello from My First CI"
       - run: pwd
-      - run: ls  
-      - run: bash 02-memory-health-checker/memory_checker.sh
+      - run: ls
+      - run: exit 1
+      
       - name: Check success
         if: success()
-        run: echo "Previous steps were successful"  
+        run: echo "Previous steps were successful"
+      - run: bash 02-memory-health-checker/memory_checker.sh  
