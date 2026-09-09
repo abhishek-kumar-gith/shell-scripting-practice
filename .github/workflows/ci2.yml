@@ -48,6 +48,9 @@ jobs:
       - name: Show repository
         run: echo "Repository is $GITHUB_REPOSITORY"
 
+      - name: Show actor
+        run: echo "Triggered by $GITHUB_ACTOR"
+
 
 
       - name: Success check
