@@ -69,6 +69,10 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: echo "This is the main branch" 
 
+      - name: PR check
+        if: github.event_name == 'pull_request'
+        run: echo "This workflow was triggered by a Pull Request"
+
       - name: Success check
         if: success()
         run: echo "SUCCESS condition is true"
