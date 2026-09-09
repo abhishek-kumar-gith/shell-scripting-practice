@@ -45,7 +45,10 @@ jobs:
            STEP_NAME: Test Step
         run: echo "Step is $STEP_NAME"
     
-     
+      - name: Show repository
+        run: echo "Repository is $GITHUB_REPOSITORY"
+
+
 
       - name: Success check
         if: success()
