@@ -41,7 +41,9 @@ jobs:
         run: echo "Application name is $APP_NAME"
 
       - name: Show environment
-        run: echo "Environment is $ENVIRONMENT"
+        env:
+           STEP_NAME: Test Step
+        run: echo "Step is $STEP_NAME"
     
      
 
