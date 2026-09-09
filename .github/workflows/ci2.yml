@@ -23,7 +23,8 @@ jobs:
         id: version
         run: echo "version=1.0.5" >> "$GITHUB_OUTPUT" 
         
-
+      - name: Show version
+        run: echo "Version is ${{ steps.version.outputs.version }}"  
 
       - name: Success check
         if: success()
