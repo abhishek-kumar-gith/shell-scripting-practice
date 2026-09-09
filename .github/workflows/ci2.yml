@@ -19,8 +19,8 @@ jobs:
       - name: Step 3
         run: echo "I am Step 3"
       
-      - name: Test failure
-        run: exit 1
+      
+        
 
 
       - name: Success check
