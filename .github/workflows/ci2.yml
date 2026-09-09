@@ -10,6 +10,14 @@ jobs:
       - run: echo "Hello from My First CI"
       - run: pwd
       - run: ls
+      - name: Step 1
+        run: echo "I am Step 1"
+
+      - name: Step 2
+        run: echo "I am Step 2"
+
+      - name: Step 3
+        run: echo "I am Step 3"
       
       - name: Success check
         if: success()
