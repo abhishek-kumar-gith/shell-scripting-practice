@@ -10,7 +10,7 @@ jobs:
     
     runs-on: ubuntu-latest
     env:
-    ENVIRONMENT: testing 
+      ENVIRONMENT: testing 
 
 
     outputs:
