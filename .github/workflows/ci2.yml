@@ -56,8 +56,22 @@ jobs:
        
       - name: Show app version from test
         run: echo "Build is using version ${{ needs.test.outputs.app-version }}"       
-        
-        
+     
+      - name: Create build file
+        run: echo "This is my application build" > app.txt
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-build
+          path: app.txt
+     
+
+
+
+
+
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
