@@ -25,7 +25,11 @@ jobs:
         
       - name: Show version
         run: echo "Version is ${{ steps.version.outputs.version }}"  
+    
 
+
+    outputs:
+      app-version: ${{ steps.version.outputs.version }}   
       - name: Success check
         if: success()
         run: echo "SUCCESS condition is true"
@@ -41,7 +45,8 @@ jobs:
     steps:
       - name: Build Step
         run: echo "I am Build Job"
-
+      - name: Show app version
+        run: echo "Building version ${{ needs.test.outputs.app-version }}"
       
         
         
