@@ -53,7 +53,9 @@ jobs:
         run: echo "I am Build Job"
       - name: Show app version
         run: echo "Building version ${{ needs.test.outputs.app-version }}"
-      
+       
+      - name: Show app version from test
+        run: echo "Build is using version ${{ needs.test.outputs.app-version }}"       
         
         
   deploy:
