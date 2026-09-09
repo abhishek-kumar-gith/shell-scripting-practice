@@ -50,7 +50,9 @@ jobs:
 
       - name: Show actor
         run: echo "Triggered by $GITHUB_ACTOR"
-
+  
+      - name: Show branch reference
+        run: echo "Branch reference is $GITHUB_REF"   
 
 
       - name: Success check
