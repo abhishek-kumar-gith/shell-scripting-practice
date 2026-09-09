@@ -1,5 +1,8 @@
 name: My First CI
 
+env:
+  APP_NAME: MyApplication
+
 on: push
 
 jobs:
@@ -31,6 +34,8 @@ jobs:
       - name: Show version
         run: echo "Version is ${{ steps.version.outputs.version }}"  
     
+      - name: Show app name
+        run: echo "Application name is $APP_NAME"
 
 
     
