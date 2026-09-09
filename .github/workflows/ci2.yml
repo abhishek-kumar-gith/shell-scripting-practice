@@ -3,7 +3,9 @@ name: My First CI
 env:
   APP_NAME: MyApplication
 
-on: push
+on: 
+   push:
+   pull_request:
 
 jobs:
   test:
