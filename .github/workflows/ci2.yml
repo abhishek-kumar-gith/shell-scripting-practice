@@ -9,6 +9,9 @@ jobs:
   test:
     
     runs-on: ubuntu-latest
+    env:
+    ENVIRONMENT: testing 
+
 
     outputs:
      app-version: ${{ steps.version.outputs.version }}  
@@ -37,7 +40,8 @@ jobs:
       - name: Show app name
         run: echo "Application name is $APP_NAME"
 
-
+      - name: Show environment
+        run: echo "Environment is $ENVIRONMENT"
     
      
 
