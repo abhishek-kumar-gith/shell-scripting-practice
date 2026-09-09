@@ -65,7 +65,12 @@ jobs:
       - name: Failure check
         if: failure()
         run: echo "FAILURE condition is true" 
-        
+       
+
+      - name: Use secret
+        run: echo "Secret is $MY_SECRET"
+        env:
+          MY_SECRET: ${{ secrets.MY_SECRET }}      
         
   build:
     needs: test
