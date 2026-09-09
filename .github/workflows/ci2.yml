@@ -19,7 +19,9 @@ jobs:
       - name: Step 3
         run: echo "I am Step 3"
       
-      
+     - name: Generate version
+       id: version
+       run: echo "version=1.0.5" >> "$GITHUB_OUTPUT" 
         
 
 
