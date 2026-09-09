@@ -54,6 +54,9 @@ jobs:
       - name: Show branch reference
         run: echo "Branch reference is $GITHUB_REF"   
 
+      - name: Show commit SHA
+        run: echo "Commit SHA is $GITHUB_SHA"
+
 
       - name: Success check
         if: success()
