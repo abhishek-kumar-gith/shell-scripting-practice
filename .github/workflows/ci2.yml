@@ -29,7 +29,8 @@ jobs:
 
 
     outputs:
-      app-version: ${{ steps.version.outputs.version }}   
+     app-version: ${{ steps.version.outputs.version }}   
+
       - name: Success check
         if: success()
         run: echo "SUCCESS condition is true"
