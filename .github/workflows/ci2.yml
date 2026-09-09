@@ -79,6 +79,10 @@ jobs:
       - name: Deploy Step
         run: echo "Application deployed successfully"      
       
-        
+    
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: my-build      
         
         
