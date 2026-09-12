@@ -16,6 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ENVIRONMENT: testing 
+    
+    strategy:
+      matrix:
+        version: [18, 20, 22]
 
 
     outputs:
@@ -72,6 +76,9 @@ jobs:
       - name: PR check
         if: github.event_name == 'pull_request'
         run: echo "This workflow was triggered by a Pull Request"
+
+      - name: Show matrix version
+        run: echo "Testing with version ${{ matrix.version }}"
 
       - name: Success check
         if: success()
