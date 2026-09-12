@@ -161,4 +161,4 @@ jobs:
           name: my-build      
         
       - name: Check downloaded file
-        run: cat build/build-info.txt   
+        run: cat build-info.txt   
