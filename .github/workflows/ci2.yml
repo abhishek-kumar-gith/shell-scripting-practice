@@ -127,11 +127,19 @@ jobs:
       - name: Create build file
         run: echo "This is my application build" > app.txt
 
+
+      - name: Create build folder
+        run: |
+          mkdir -p build
+          echo "Application binary" > build/app.bin
+          echo "Build information" > build/build-info.txt
+
+
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: my-build
-          path: app.txt
+          path: build/
      
 
 
