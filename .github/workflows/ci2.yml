@@ -25,6 +25,10 @@ jobs:
     outputs:
      app-version: ${{ steps.version.outputs.version }}  
 
+    
+
+
+
     steps:
       - uses: actions/checkout@v4
       - run: echo "Hello from My First CI"
@@ -79,6 +83,20 @@ jobs:
 
       - name: Show matrix version
         run: echo "Testing with version ${{ matrix.version }}"
+
+
+      - name: Cache demo
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/demo
+          key: demo-cache-${{ runner.os }}
+
+      - name: Create cache file
+        run: |
+          mkdir -p ~/.cache/demo
+          echo "Hello from cache" > ~/.cache/demo/test.txt
+
+  
 
       - name: Success check
         if: success()
