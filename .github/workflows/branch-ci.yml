@@ -18,10 +18,10 @@ jobs:
 
 
 
-build:
-  needs: test
-  if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main'
-  runs-on: ubuntu-latest
-  steps:
-    - name: Build application
-      run: echo "Building application..."
+  build:
+    needs: test
+    if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build application
+        run: echo "Building application..."
