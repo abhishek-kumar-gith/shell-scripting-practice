@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Show branch
-      - run:  echo "Runnning on branch $GITHUB_REF_NAME"
+        run:  echo "Runnning on branch $GITHUB_REF_NAME"
