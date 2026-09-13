@@ -1,0 +1,17 @@
+name: Branch Based CI
+
+
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show branch
+      - run:  echo "Runnning on branch $GITHUB_REF_NAME"
