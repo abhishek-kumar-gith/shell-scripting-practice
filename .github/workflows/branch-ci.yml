@@ -21,6 +21,7 @@ jobs:
   build:
     needs: test
     if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main'
+    environment: development
     runs-on: ubuntu-latest
     steps:
       - name: Build application
