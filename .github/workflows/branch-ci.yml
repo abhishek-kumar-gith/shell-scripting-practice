@@ -15,3 +15,13 @@ jobs:
     steps:
       - name: Show branch
         run:  echo "Runnning on branch $GITHUB_REF_NAME"
+
+
+
+build:
+  needs: test
+  if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main'
+  runs-on: ubuntu-latest
+  steps:
+    - name: Build application
+      run: echo "Building application..."
