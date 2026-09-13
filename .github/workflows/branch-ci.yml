@@ -26,3 +26,6 @@ jobs:
     steps:
       - name: Build application
         run: echo "Building application..."
+
+      - name: Show environment
+        run: echo "Environment is $APP_ENV"
