@@ -8,6 +8,10 @@ on:
      required: true
      type: string
 
+   outputs:
+     app-version:
+       description: "Application version"
+       value: ${{ jobs.build.outputs.version }}
 
 
 
@@ -16,6 +20,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+
 
     steps:
       - name: Checkout code
@@ -30,3 +38,7 @@ jobs:
 
       - name: Run tests
         run: echo "Running tests..."
+
+      - name: Generate version
+        id: version
+        run: echo "version=1.0.5" >> "$GITHUB_OUTPUT"
