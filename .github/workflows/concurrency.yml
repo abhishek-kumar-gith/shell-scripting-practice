@@ -1,5 +1,11 @@
 name: Concurrency Demo
 
+concurrency:
+  group: branch-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+
+
 on:
   workflow_dispatch:
 
