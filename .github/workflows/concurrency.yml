@@ -2,7 +2,7 @@ name: Concurrency Demo
 
 concurrency:
   group: branch-ci-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 
 
