@@ -9,10 +9,9 @@ jobs:
     with:
       environment: production
 
-
-    show-version:
-      needs: call-build
-      runs-on: ubuntu-latest
+  show-version:
+    needs: call-build
+    runs-on: ubuntu-latest
 
     steps:
       - name: Show app version
