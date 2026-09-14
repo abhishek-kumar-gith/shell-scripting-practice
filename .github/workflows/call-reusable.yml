@@ -11,8 +11,8 @@ jobs:
 
 
     show-version:
-    needs: call-build
-    runs-on: ubuntu-latest
+      needs: call-build
+      runs-on: ubuntu-latest
 
     steps:
       - name: Show app version
