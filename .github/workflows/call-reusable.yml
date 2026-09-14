@@ -8,3 +8,12 @@ jobs:
     uses: ./.github/workflows/reusable-build.yml
     with:
       environment: production
+
+
+    show-version:
+    needs: call-build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show app version
+        run: echo "Application version is ${{ needs.call-build.outputs.app-version }}"
